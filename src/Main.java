@@ -37,12 +37,10 @@ public class Main {
                         System.out.println("\nThe option related to the Full or Part time is not correct and was not possible add the new employee.\nPlease try again and in this step choose only 1 - Full or 2 - Part options.");
                     }
                     break;
-
                 case 2:
                     System.out.println("\nYou choose show all the employees and roles");
                     employeeManager.DisplayAllEmployeeAndRoles();
                     break;
-
                 case 3:
                     System.out.print("\nYou choose update an employee salary. Please type the employeeId: ");
                     int empID = scanner.nextInt();
@@ -50,21 +48,17 @@ public class Main {
                     double newSalary = scanner.nextDouble();
                     employeeManager.UpdateEmployeeSalary(empID, newSalary);
                     break;
-
                 case 4:
                     System.out.print("\nYou choose display an employee details, so please type the employeeId: ");
                     int eID = scanner.nextInt();
                     employeeManager.DisplayEmployeeDetailsAndBonus(eID);
                     break;
-
                 case 5:
                     System.out.println("\nYou choose exit the program, thank you for use this one!");
                     run = false;
                     return;
-
                 default:
                     System.out.println("\nInvalid choice! Please try again.");
-
             }
         }
         scanner.close();

@@ -13,8 +13,6 @@ public class EmployeeManager{
         } else {
             System.out.format("\nThe ID %d is already registered!\n", employee.getEmployeeId());
         }
-
-
     }
 
     public void DisplayAllEmployeeAndRoles(){
@@ -22,7 +20,6 @@ public class EmployeeManager{
             employee.displayDetails();
             System.out.println();
         }
-
     }
 
     public void UpdateEmployeeSalary(int employeeId, double newSalary){
@@ -36,8 +33,6 @@ public class EmployeeManager{
         } else {
             System.out.format("\nThe ID %d is not registered!\n", employeeId);
         }
-
-
     }
 
     public void DisplayEmployeeDetailsAndBonus(int employeeId){
@@ -47,7 +42,6 @@ public class EmployeeManager{
                 break;
             }
         }
-
     }
 }
 
